@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(CosiAzure-Black.ttf);
+}
+
+
+
+.main {
+  
+  
+
+  width: 100%;
+
+  height: 100vh;
+
+}
+
+.back {
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+.back img {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.top {
+  
+  pointer-events: none;
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100vh;
+
+
+}
+
+#workingarea {
+  
+  
+  
+  position: relative;
+
+  margin: 0 auto;
+
+  width: 80%;
+
+  max-width: 1920px;
+
+  /*max-width : 1920px;*/
+
+  height: 100vh;
+
+
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+#nav a {
+  
+}
+
+
+#nav img {
+  height: 40px;
+}
+
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#nleft,
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 13px;
+}
+
+
+#hero {
+  
+  position: absolute;
+  transform: translate(0%,-50%);
+  top: 49%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+#heroleft {
+  min-width: 55%;
+}
+
+#heroleft #elem {
+ position: relative;
+  height: 5vw;
+  overflow: hidden;
+}
+
+#heroleft #elem h1:nth-child(1){
+  top: 0;
+}
+
+#heroleft #elem h1{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: .8; 
+  color: white;
+  font-weight: 300;
+  font-size: 9vh;
+ font-family: "myFirstFont";
+  text-transform: capitalize;
+ 
+}
+
+#heroright {
+  display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+  width: 25%;
+  color: black;
+}
+
+#heroright p {
+font-size: 15px;
+font-weight: 300;
+text-align: right;
+font-family: "Pacifico", cursive;
+
+}
+

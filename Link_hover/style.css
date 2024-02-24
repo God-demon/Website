@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.menu_item {
+  width: max-content;
+  
+  
+}
+
+.menu_item-image_wrapper{
+  
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 300px; /*height: 400px; for Desktop*/
+  width: 300px; /*width: 600px;*/
+ pointer-events:none;
+ opacity: 0;
+ 
+ 
+}
+
+.menu_item-image_inner .menu_item-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  
+}
+  
+
+
+.menu_item-text {
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  font-weight: 500;
+  text-transform: lowercase;
+  font-size: 12vw;
+  line-height: 2;
+  color: white;
+  opacity: 1;
+  transition: opacity 350ms ease;
+  white-space: nowarp;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-user-select: none;
+  pointer-events: none;
+  text-transform: capitalize;
+  
+}
+
+
+.menu_item:hover .menu_item-text{
+  color: red;
+}
+
+.menu_item:hover .menu_item-image_wrapper{
+  z-index: -2;
+}
+
+
+@media screen and (min-width:400px) {
+   
+   .menu_item-image_wrapper {
+     height: 600px;
+     width: 700px;
+   }
+   
+   .menu_item-image_inner .menu_item-image{
+     
+     object-fit: cover;
+   }
+   
+   
+   
+}

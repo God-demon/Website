@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 100;
+    color: white;
+    font-family: "Pacifico", cursive;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1560635506-f7f91db00b78?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGRpd2FsaSUyMGNlbGVicmF0aW9ufGVufDB8fDB8fHww");
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: cover;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav2 {
+    display: flex;
+    gap: 65px;
+}
+
+.nav3 {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+}
+
+
+.logo {
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+
+}
+
+.nav h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    user-select: none;
+    transition: all ease-in;
+}
+
+.nav h3:hover {
+    color: aqua;
+}
+
+.nav button {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    font-weight: 16px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all ease-in;
+}
+
+button:hover {
+
+    color: red;
+    background-color: black;
+
+}
+
+#main h1 {
+    font-size: 110px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    z-index: 99;
+    
+}
+
+#main h1 span {
+    background-color: rgb(252, 67, 67);
+    font-size: 30px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 20px;
+    padding: 20px;
+    user-select: none;
+}
+
+#main h1:nth-child(2) {
+    color: red;
+    margin-top: 120px;
+}
+
+#main .left-image {
+    height: 200px;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+    border-radius: 20px;
+    transition: all ease;
+    border-color: white;
+    border: solid 5px;
+}
+
+#main .right-image {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 10%;
+    right: 4%;
+    border-radius: 20px;
+    border-color: white;
+    border: solid 5px;
+}
+

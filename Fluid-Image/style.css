@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+@import url('https://fonts.googleapis.com/css?family=Chela+One');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 15pt;
+  
+  text-align: center;
+  
+  background: #000000;
+}
+
+
+.mein{
+  overflow: hidden;
+}
+
+
+/* navbar */
+
+
+
+
+.nav {
+  padding: 10px;
+  display: flex;
+  gap: 10vw;
+  background: rgba(150, 255, 255, 0.25);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav .img-icon {
+  font-size: 40px;
+  text-shadow: 2px 2px 8px #D6D6D6;
+  color: whitesmoke;
+}
+
+.nav h3 {
+  font-weight: 400;
+
+  font-size: 35px;
+
+  text-transform: capitalize;
+
+  white-space: nowrap;
+  
+  font-family: 'Pacifico', cursive;
+  
+  transform: translateY(1);
+  
+  text-shadow: 2px 2px 8px #FB6486;
+  
+  color: whitesmoke;
+  
+  pointer-events: none;
+  
+  
+}
+
+.menu {
+  font-size: 40px;
+  color: white;
+}
+
+
+
+/* overlay images */
+
+
+.gallery {
+
+  display: flex;
+
+  flex-direction: column;
+  
+  
+
+}
+
+.box {
+
+  position: relative;
+
+  text-align: center;
+
+  padding: 10px;
+  
+  
+  height: auto;
+  
+  width: auto;
+  
+  overflow: hidden;
+  
+  
+
+}
+
+.img-div {
+  overflow: hidden;
+  
+  height: 300px;
+  
+  width: 100%;
+}
+
+.box:hover .overlay1 {
+  height: 94%;
+}
+
+.box:hover .image {
+  transform: scale(1.1);
+}
+
+
+
+
+.image {
+  display: block;
+  height: 300px;
+  width: 100%;
+  margin-bottom: -10px;
+  object-fit: cover;
+  transition: all .5s ease;
+  border-radius: 5px;
+  filter: none;
+  border: solid white;
+  overflow: hidden;
+ 
+}
+
+.enable{
+  filter: grayscale(30%);
+}
+
+
+
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+ /* this is use for background color u can rotate and also add gradient effect*/
+  background-image: -webkit-linear-gradient(rgb(93, 99, 176, 0), rgba(24, 54, 218, .30));
+  width: 340px;
+  height: 0;
+  transition: .6s ease;
+  /*this is use for move any element*/
+  transform: translateY(-10px);
+  overflow: hidden;
+  
+  backdrop-filter: blur(2px);
+}
+
+
+
+
+.overlay1 h4 {
+  
+  position: absolute;
+
+  text-align: center;
+
+  color: white;
+
+  font-size: 20px;
+  
+  font-weight: 300;
+
+  text-transform: capitalize;
+  
+  bottom: 33%;
+  
+  transition: all .4s ease;
+  
+  font-family: Pacifico , cursive;
+  pointer-events: none;
+  
+  
+  
+  
+
+}
+
+
+/* footer*/
+
+footer {
+  background-color: #C7F6FF;
+  margin: 0;
+  
+  outline: none;
+}
+
+.bottom {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  
+  
+}
+
+.bottom i {
+   font-size: 40px;
+}
+
+i:nth-child(1) {
+  color:#2F40FF;
+}
+
+i:nth-child(2) {
+  color: #FF2F60;
+}
+
+i:nth-child(3) {
+  background: linear-gradient(80deg, #f32170,
+    #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+i:nth-child(4) {
+  color: #0CA0F5;
+}
+
+.footer-text h3{
+ font-size: 20px;
+ font-family: cursive;
+}

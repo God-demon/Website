@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: black;
+  color: #fff;
+}
+
+nav{
+  position : fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.container {
+  position : relative;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 70px;
+  height: 100px;
+  background: white;
+  margin: 10px;
+}
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  
+}
+
+.container .time{
+    position: absolute;
+    z-index: 1500;
+    width: 0%;
+    height: 50px;
+    background-color: #f1683a;
+    left: 0;
+    top: 0;
+}
+
+
+
